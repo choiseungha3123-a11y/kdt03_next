@@ -1,5 +1,5 @@
 import Link from 'next/link';
-export default function App01Layout({
+export default function App02Layout({
     children,
 }: Readonly<{
   children: React.ReactNode;
@@ -9,8 +9,8 @@ export default function App01Layout({
             <aside className='w-60 bg-gray-200 p-5'>
                 <h1 className="mb-5 text-2xl font-bold">맛집 카테고리</h1>
                 <nav>
-                    <ul>
-                        <li className="mb-2">
+                    <ul className='flex'>
+                        <li className="mb-2 mx-5">
                             <Link href="/app01/dongraegu" className='hover:text-blue-500'>동래구</Link>
                         </li>
                         <li className="mb-2">

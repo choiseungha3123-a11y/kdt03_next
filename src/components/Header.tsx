@@ -28,8 +28,13 @@ export default function Header() {
             </Link>
           </li>
           <li>
-            <Link href="/todo" className='hover:font-bold hover:bg-blue-50 p-2 border rounded-sm hover:text-blue-900'>
+            <Link href="/todolist" className='hover:font-bold hover:bg-blue-50 p-2 border rounded-sm hover:text-blue-900'>
               할일목록
+            </Link>
+          </li>
+          <li>
+            <Link href="/app01" className='hover:font-bold hover:bg-blue-50 p-2 border rounded-sm hover:text-blue-900'>
+              맛집
             </Link>
           </li>
           </>

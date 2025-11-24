@@ -37,6 +37,11 @@ export default function Header() {
               맛집
             </Link>
           </li>
+          <li>
+            <Link href="/restaurants" className='hover:font-bold hover:bg-blue-50 p-2 border rounded-sm hover:text-blue-900'>
+              부산 맛집
+            </Link>
+          </li>
           </>
           }
         </ul>

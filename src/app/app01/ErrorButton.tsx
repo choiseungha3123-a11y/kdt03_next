@@ -1,19 +1,18 @@
 'use client';
-import { useState } from 'react';
+import { useState } from "react";
 
-export default function ErrorButton () {
-    const [error, setError] = useState(false);
+export default function ErrorButton() {
+  const [error, setError] = useState(false) ;
 
-    if (error) {
-
-    }
+  if (error) {
+    throw new Error("강제로 발생시킨 에러입니다.")
+  }
   return (
-    <div>
-      <button className='bg-red-500 hover:bg-red-700 
-                         rounded-sm text-white font-bold 
-                         py-2 px-4'
-                         onClick={() => setError(true)}>
-        에러 발생시키기
+    <div className="mt-5">
+      <button className="bg-red-600 hover:bg-red-800 text-white
+                         p-2 rounded-sm"
+              onClick={() => setError(true)} >
+        에러발생시키기
       </button>
     </div>
   );

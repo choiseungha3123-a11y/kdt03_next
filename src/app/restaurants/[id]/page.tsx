@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link"
 import type { Restaurant } from "@/types/Restaurant";
 import RestaurantData from "@/data/부산맛집.json" ;
 import { notFound } from "next/navigation";
@@ -100,7 +101,14 @@ export default async function RestaurantDetail({ params } : RestaurantDetailProp
           <h3 className="font-bold text-gray-500 text-sm uppercase tracking-wider mb-1">상세 설명</h3>
           <p className="whitespace-pre-line">{description}</p>
         </div>
-         
+      </div>
+      <div className="mt-8 text-center">
+        <Link 
+          href="/restaurants" 
+          className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition-colors shadow-md"
+        >
+          목록으로 돌아가기
+        </Link>
       </div>
     </article>
   );
